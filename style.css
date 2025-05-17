@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --primary-color: #4635b1;
+  --second-color: #b771e5;
+  --third-color: #aeea94;
+  --fourth-color: #fffbca;
+}
+
+body {
+  background-color: #f8f8ff;
+  color: #333;
+}
+
+.container {
+  padding: 40px 60px;
+  margin: 0 auto;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.logo h1 {
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--second-color);
+}
+
+.btn-contact {
+  background-color: var(--second-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-contact:hover {
+  background-color: var(--primary-color);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.content .name {
+  color: var(--primary-color);
+}
+
+.content h3 {
+  font-size: 24px;
+  color: var(--second-color);
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.btn-hire {
+  background-color: var(--third-color);
+  color: #222;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 18px;
+  width: 200px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-hire:hover {
+  background-color: #92d577;
+}
+
+.image img {
+  width: 100%;
+  width: 700px;
+  border-radius: 20px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: var(--fourth-color);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+footer p {
+  font-size: 16px;
+  color: #444;
+}

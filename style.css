@@ -1,8 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto Mono", monospace;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--second-color);
 }
 
 :root {
@@ -17,19 +39,17 @@ body {
   color: #333;
 }
 
-.container {
-  padding: 40px 60px;
-  margin: 0 auto;
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 999;
   justify-content: space-between;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+nav.sticky {
+  background: #4070f4;
+  padding: 13px 0;
 }
 
 .logo {

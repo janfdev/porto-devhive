@@ -454,7 +454,7 @@ footer {
     padding: 20px;
   }
 
-  /* @media (max-width: 1652px) {
+  @media (max-width: 1652px) {
     .hero {
       padding: 80px 5%;
       display: flex;
@@ -481,7 +481,7 @@ footer {
     .hero .image img {
       width: 500px;
     }
-  } */
+  }
 
   @media (max-width: 1440px) {
     .hero {
@@ -512,6 +512,27 @@ footer {
 
     .skills-details .skill img {
       width: 80px;
+    }
+  }
+
+  @media (min-width: 1000px) and (max-width: 1300px) {
+    .hero {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background: blue;
+    }
+
+    .hero .content {
+      background: red;
+    }
+
+    .hero .image {
+      width: 200px;
+    }
+    .hero .image img {
+      width: 800px;
     }
   }
 

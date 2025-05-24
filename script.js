@@ -38,5 +38,5 @@ cancelBtn.onclick = hideNavbarMenu;
 // Close side navigation when a menu link is clicked
 let navLinks = document.querySelectorAll(".menu li a");
 navLinks.forEach((link) => {
-  link.addEventListener("click", hideNavMenu);
+  link.addEventListener("click", hideNavbarMenu);
 });

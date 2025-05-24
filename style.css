@@ -454,7 +454,7 @@ footer {
     padding: 20px;
   }
 
-  @media (max-width: 1652px) {
+  /* @media (max-width: 1652px) {
     .hero {
       padding: 80px 5%;
       display: flex;
@@ -481,7 +481,7 @@ footer {
     .hero .image img {
       width: 500px;
     }
-  }
+  } */
 
   @media (max-width: 1440px) {
     .hero {

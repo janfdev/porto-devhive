@@ -85,10 +85,16 @@ nav ul li a:hover {
 
 main {
   display: flex;
+  flex-direction: column; /* agar kebawah*/
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 40px;
+}
+
+/* Menampung content dan image agar sejajar */
+.hero {
+  display: flex;
+  align-items: center;
 }
 
 .content {

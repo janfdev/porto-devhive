@@ -22,7 +22,7 @@ body {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
@@ -45,9 +45,16 @@ nav {
   transition: all 0.3s ease;
 }
 
-nav.sticky {
-  background: #4070f4;
-  padding: 13px 0;
+nav .menu-btn,
+.navbar .menu .cancel-btn {
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
 }
 
 .navbar {
@@ -75,13 +82,13 @@ nav.sticky {
   color: var(--primary-color);
 }
 
-nav ul {
+nav .menu {
   display: flex;
   gap: 25px;
   list-style: none;
 }
 
-nav ul li a {
+nav .menu li a {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: 500;
@@ -222,6 +229,58 @@ main {
   cursor: pointer;
 }
 
+.skills {
+  padding: 80px 10%;
+}
+
+span:hover {
+  text-decoration: underline;
+}
+
+.skills .title span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.skills .skills-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.skills-details .skill {
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-details .skill:hover {
+  filter: grayscale(0%);
+}
+
+.skill img {
+  width: 100px;
+}
+
+.skill .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Services */
 .services {
   padding: 80px 10%;
@@ -286,6 +345,10 @@ main {
   color: var(--primary-color);
 }
 
+.contact h1:hover {
+  text-decoration: underline;
+}
+
 .contact-container {
   display: flex;
   gap: 60px;
@@ -346,7 +409,7 @@ footer {
 }
 
 /* Scroll TO Top Button CSS */
-.scroll-button a {
+.scroll-to-top a {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -400,12 +463,15 @@ footer {
   nav .navbar {
     width: 90%;
   }
+  .hero .image img {
+    display: none;
+  }
 
   nav .navbar .menu {
     position: fixed;
     left: -100%;
     top: 0;
-    background: #0e2431;
+    background: var(--second-color);
     height: 100vh;
     max-width: 400px;
     width: 100%;
@@ -434,17 +500,18 @@ footer {
     display: none;
   }
 
+  nav .menu-btn {
+    color: var(--primary-color);
+  }
+
   nav .menu-btn,
   .navbar .menu .cancel-btn {
     display: block;
   }
 
-  .home .text-two {
-    font-size: 65px;
-  }
-
-  .home .text-three {
-    font-size: 35px;
+  .about-details .left img {
+    width: 100%;
+    height: auto;
   }
 
   .skills .skills-details {
@@ -457,20 +524,13 @@ footer {
     width: 100%;
     margin-bottom: 50px;
   }
-
-  .skills-details .boxes {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
   .services .boxes .box {
     margin: 20px 0;
     width: 100%;
   }
 
-  .contact .text {
-    width: 100%;
+  .btn-contact {
+    display: none;
   }
 }
 
